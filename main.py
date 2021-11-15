@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 from skimage.filters import threshold_local
 import pytesseract
 import logging
+import cv2 as cv
+import os
 logging.basicConfig(filename="logs/logs2.log", filemode="w", level=logging.INFO, format='%(message)s')
 
 
@@ -31,7 +33,8 @@ def plotImages(image, binary):
     plt.show()
 
 if __name__ == "__main__":
-    image = Image.open("images/image2.png")
+    imageName = "image2.png"
+    image = Image.open("images/" + imageName)
     pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
     imageOriginal = asarray(image)
     logging.info("Basic image:")
@@ -51,14 +54,25 @@ if __name__ == "__main__":
     logging.info("Addaptive threshold binarization image:")
     text = pytesseract.image_to_string(binary_adaptive)
     logging.info(text)
-
+    
     Otsu = OtsuThresholder(image)
     threshold = Otsu.Otsu()
     binary = image > threshold
     binary = binary.astype(int)
+    binary = binary * 255
+
+    if not os.path.isfile("images/results/otsu1.png") and imageName == "image1.png":
+        cv.imwrite("images/results/otsu1.png", binary)
+    if not os.path.isfile("images/results/otsu2.png") and imageName == "image2.png":
+        cv.imwrite("images/results/otsu2.png", binary)
+    
+    if imageName == "image1.png":
+        imageOtsu = cv.imread("images/results/otsu1.png", 0)
+    else:
+        imageOtsu = cv.imread("images/results/otsu2.png", 0)
 
     logging.info("Otsu threshold binarization image:")
-    text = pytesseract.image_to_string(binary)
+    text = pytesseract.image_to_string(imageOtsu)
     logging.info(text)
 
     plotImages(image, binary)
