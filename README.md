@@ -19,5 +19,12 @@ OCR is performed using Tesseract, do install Tesseract to run these files.
 OCR results are generated through tesseract which takes the thresholded binary image as an input:
 |  | Otsy threshold | Adaptive threshold |
 | --- | --- | --- |
-| Image1 |  |
+| Image1 |  | Parking: You may park anywhere on the campus where there are no signs prohibiting par-
+king. Keep in mind the carpool hours and park accordingly so you do not get blocked in the
+afternoon
+
+Under Schoo! Age Children.While we love the younger children, it can be disruptive and
+inappropriate to have them on campus during schoo! hours. There may be special times
+that they may be invited or can accompany a parent volunteer, but otherwise we ask that
+you adhere to our ~� policy for the benefit of the students and staff. |
 | Image2 |   |
