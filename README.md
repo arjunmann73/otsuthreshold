@@ -19,12 +19,5 @@ OCR is performed using Tesseract, do install Tesseract to run these files.
 OCR results are generated through tesseract which takes the thresholded binary image as an input:
 |  | Otsy threshold | Adaptive threshold |
 | --- | --- | --- |
-| Image1 |  | Parking: You may park anywhere on the campus where there are no signs prohibiting par-
-king. Keep in mind the carpool hours and park accordingly so you do not get blocked in the
-afternoon
-
-Under Schoo! Age Children.While we love the younger children, it can be disruptive and
-inappropriate to have them on campus during schoo! hours. There may be special times
-that they may be invited or can accompany a parent volunteer, but otherwise we ask that
-you adhere to our ~� policy for the benefit of the students and staff. |
-| Image2 |   |
+| Image1 | None  | Parking: You may park anywhere on the campus where there are no signs prohibiting par-king. Keep in mind the carpool hours and park accordingly so you do not get blocked in the afternoon Under Schoo! Age Children.While we love the younger children, it can be disruptive and inappropriate to have them on campus during schoo! hours. There may be special times that they may be invited or can accompany a parent volunteer, but otherwise we ask that you adhere to our ~� policy for the benefit of the students and staff. |
+| Image2 | None | Sonnet for Lena O deer Lena, your benuty isso ens Vn in barcl wanetimes ta describe it, [nat Lehought the entire world T wankd lapresa TE only sour portrait [ enukd compress, Atlus! Firat when [tried to use �Q nd that your checks belong to only you. y hair coulaion @ thotuud Haws Tfard to imatth #ith suins of discrete cositics. And fur your Lips, setsitial and tartial Thirteen Craye fount aot the proper fractal. Auel while these setbacks are all ap Diainht have fice them with lacks here or there Bt whoa dilters tack apackle dro Durag all this, VL past dipitire. Dee per vig yi oven Dsaid, then Coltliaeat |
