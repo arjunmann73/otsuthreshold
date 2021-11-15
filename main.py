@@ -31,7 +31,7 @@ def plotImages(image, binary):
     plt.show()
 
 if __name__ == "__main__":
-    image = Image.open("images/image2.png")
+    image = Image.open("images/image1.png")
     pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
     imageOriginal = asarray(image)
     logging.info("Basic image:")
